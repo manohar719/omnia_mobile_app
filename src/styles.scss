@@ -1,0 +1,159 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$mobile-app-primary: mat.define-palette(mat.$indigo-palette);
+$mobile-app-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$mobile-app-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$mobile-app-theme: mat.define-light-theme((color: (primary: $mobile-app-primary,
+                accent: $mobile-app-accent,
+                warn: $mobile-app-warn,
+            )));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($mobile-app-theme);
+
+/* You can add global styles to this file, and also import other style files */
+// Import only the PanelBar and Grid styles by using Node Sass.
+// kendo-angular-buttons
+@import "@progress/kendo-theme-default/scss/button/_index.scss";
+@import "@progress/kendo-theme-default/scss/chip/_index.scss";
+@import "@progress/kendo-theme-default/scss/fab/_index.scss";
+
+// kendo-angular-charts
+@import "@progress/kendo-theme-default/scss/dataviz/_index.scss";
+
+// kendo-angular-conversational-ui
+@import "@progress/kendo-theme-default/scss/chat/_index.scss";
+
+// kendo-angular-dialog
+@import "@progress/kendo-theme-default/scss/dialog/_index.scss";
+@import "@progress/kendo-theme-default/scss/window/_index.scss";
+
+// kendo-angular-dropdowns
+@import "@progress/kendo-theme-default/scss/autocomplete/_index.scss";
+@import "@progress/kendo-theme-default/scss/combobox/_index.scss";
+@import "@progress/kendo-theme-default/scss/dropdownlist/_index.scss";
+@import "@progress/kendo-theme-default/scss/dropdowntree/_index.scss";
+@import "@progress/kendo-theme-default/scss/multiselect/_index.scss";
+
+// kendo-angular-gauges
+@import "@progress/kendo-theme-default/scss/dataviz/_index.scss";
+
+// kendo-angular-grid
+@import "@progress/kendo-theme-default/scss/grid/_index.scss";
+
+// kendo-angular-editor
+@import "@progress/kendo-theme-default/scss/editor/_index.scss";
+
+// kendo-angular-icons
+@import "@progress/kendo-theme-default/scss/icons/_index.scss";
+
+// kendo-angular-indicators
+@import "@progress/kendo-theme-default/scss/badge/_index.scss";
+@import "@progress/kendo-theme-default/scss/loader/_index.scss";
+
+// kendo-angular-inputs
+@import "@progress/kendo-theme-default/scss/checkbox/_index.scss";
+@import "@progress/kendo-theme-default/scss/colorpicker/_index.scss";
+@import "@progress/kendo-theme-default/scss/forms/_index.scss";
+@import "@progress/kendo-theme-default/scss/input/_index.scss";
+@import "@progress/kendo-theme-default/scss/maskedtextbox/_index.scss";
+@import "@progress/kendo-theme-default/scss/numerictextbox/_index.scss";
+@import "@progress/kendo-theme-default/scss/radio/_index.scss";
+@import "@progress/kendo-theme-default/scss/slider/_index.scss";
+@import "@progress/kendo-theme-default/scss/switch/_index.scss";
+@import "@progress/kendo-theme-default/scss/textarea/_index.scss";
+@import "@progress/kendo-theme-default/scss/textbox/_index.scss";
+@import "@progress/kendo-theme-default/scss/validator/_index.scss";
+
+// kendo-angular-layout
+@import "@progress/kendo-theme-default/scss/avatar/_index.scss";
+@import "@progress/kendo-theme-default/scss/card/_index.scss";
+@import "@progress/kendo-theme-default/scss/drawer/_index.scss";
+@import "@progress/kendo-theme-default/scss/expansion-panel/_index.scss";
+@import "@progress/kendo-theme-default/scss/panelbar/_index.scss";
+@import "@progress/kendo-theme-default/scss/splitter/_index.scss";
+@import "@progress/kendo-theme-default/scss/stepper/_index.scss";
+@import "@progress/kendo-theme-default/scss/tabstrip/_index.scss";
+@import "@progress/kendo-theme-default/scss/tilelayout/_index.scss";
+
+// kendo-angular-menu
+@import "@progress/kendo-theme-default/scss/menu/_index.scss";
+
+// kendo-angular-navigation
+@import "@progress/kendo-theme-default/scss/appbar/_index.scss";
+@import "@progress/kendo-theme-default/scss/breadcrumb/_index.scss";
+@import "@progress/kendo-theme-default/scss/bottom-navigation/_index.scss";
+
+// kendo-angular-notification
+@import "@progress/kendo-theme-default/scss/notification/_index.scss";
+
+// kendo-angular-pager
+@import "@progress/kendo-theme-default/scss/pager/_index.scss";
+
+// kendo-angular-popup
+@import "@progress/kendo-theme-default/scss/popup/_index.scss";
+
+// kendo-angular-progressbar
+@import "@progress/kendo-theme-default/scss/progressbar/_index.scss";
+
+// kendo-angular-ripple
+@import "@progress/kendo-theme-default/scss/ripple/_index.scss";
+
+// kendo-angular-scrollview
+@import "@progress/kendo-theme-default/scss/scrollview/_index.scss";
+
+// kendo-angular-toolbar
+@import "@progress/kendo-theme-default/scss/toolbar/_index.scss";
+
+// kendo-angular-tooltip
+@import "@progress/kendo-theme-default/scss/tooltip/_index.scss";
+
+// kendo-angular-treelist
+@import "@progress/kendo-theme-default/scss/treelist/_index.scss";
+
+// kendo-angular-treeview
+@import "@progress/kendo-theme-default/scss/treeview/_index.scss";
+
+// kendo-angular-upload
+@import "@progress/kendo-theme-default/scss/dropzone/_index.scss";
+@import "@progress/kendo-theme-default/scss/upload/_index.scss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    margin-bottom: 0.6rem;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

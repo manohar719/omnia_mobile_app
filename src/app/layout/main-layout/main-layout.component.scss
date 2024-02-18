@@ -1,0 +1,26 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+.sidenav-list-wrapper{
+    min-width: 280px;
+    overflow: scroll;
+}
+.main-content-wrapper{
+    height: calc(100vh - 82px);
+    padding: 0rem 0.6rem;
+    background-color: #fff;
+}
+mat-toolbar {
+    mat-toolbar-row {
+        margin : 5px 0;
+        padding-left: 0;
+        img{
+            width: 105px;
+        }
+    }
+    background-image: linear-gradient(to right, #002147 , #004eb7);
+}
+.example-icon {
+    background-color: #057cc9;
+    border-radius: 50%;
+}

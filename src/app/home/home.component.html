@@ -1,0 +1,22 @@
+<div>
+    <div class="approval-title">
+        <h3>Good Morning, {{name}} </h3>
+        <p>Let's have a great day!</p>
+    </div>
+    <div>
+        <mat-grid-list cols="2" rowHeight="9rem" gutterSize="1rem">
+            @for (activity of activities; track activity) {
+                <mat-grid-tile>
+                    <div class="tile-content">
+                        <mat-card [matBadge]="activity.count" matBadgeColor="warn" matBadgeSize="large">
+                            <mat-card-content>
+                                <mat-icon aria-hidden="false" [ariaLabel]="activity.title" [fontIcon]="activity.icon"></mat-icon>
+                            </mat-card-content>
+                        </mat-card>
+                        <h5>{{activity.title}}</h5>
+                    </div>
+                </mat-grid-tile>
+            }
+        </mat-grid-list>
+    </div>
+</div>
