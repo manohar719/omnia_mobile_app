@@ -1,0 +1,29 @@
+<div class="main-wrapper">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <img src="../../../assets/logo.png" alt="">
+            <span class="example-spacer"></span>
+            <button mat-icon-button class="example-icon" (click)="snav.toggle()" aria-label="menu items with menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+        </mat-toolbar-row>
+    </mat-toolbar>
+    <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="0">
+        <mat-sidenav #snav [mode]="'over'" class="sidenav-list-wrapper" [fixedInViewport]="false" fixedTopGap="56">
+            <mat-nav-list>
+                @for (nav of fillerNav; track nav) {
+                <a mat-list-item [routerLink]="nav.link" (click)="snav.toggle()" routerLinkActive="active" ariaCurrentWhenActive="page">{{nav.title}}</a>
+                }
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <!-- <mat-sidenav-content>
+        @for (content of fillerContent; track content) {
+            <p>{{content}}</p>
+        }
+      </mat-sidenav-content> -->
+        <div class="main-content-wrapper">
+            <router-outlet />
+        </div>
+    </mat-sidenav-container>
+</div>
