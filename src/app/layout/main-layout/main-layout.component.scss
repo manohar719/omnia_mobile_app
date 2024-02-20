@@ -5,9 +5,25 @@
     min-width: 280px;
     overflow: scroll;
 }
+mat-nav-list{
+    a{
+        &.active{
+            background-color: #057cc98a;
+            &::before{
+                display: none;
+            }
+        }
+        
+    }
+}
 .main-content-wrapper{
     height: calc(100vh - 82px);
     padding: 0rem 0.6rem;
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 52rem;
+}
+.sidenav-container{
     background-color: #fff;
 }
 mat-toolbar {

@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-approval',
   standalone: true,
-  imports: [MatCardModule, MatIconModule],
+  imports: [MatCardModule, MatIconModule, RouterLink, RouterLinkActive],
   templateUrl: './approval.component.html',
   styleUrl: './approval.component.scss'
 })

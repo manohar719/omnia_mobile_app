@@ -5,11 +5,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-main-layout',
   standalone: true,
-  imports: [RouterOutlet, MatIconModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatListModule, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, MatIconModule, MatButtonModule, MatToolbarModule, MatSidenavModule, MatListModule, RouterLink, RouterLinkActive, CommonModule],
   templateUrl: './main-layout.component.html',
   styleUrl: './main-layout.component.scss'
 })
