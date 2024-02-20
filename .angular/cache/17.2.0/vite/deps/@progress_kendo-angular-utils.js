@@ -4,11 +4,11 @@ import {
   isDocumentAvailable,
   parseCSSClassNames,
   validatePackage
-} from "./chunk-WYRGBF26.js";
+} from "./chunk-PRCW75SL.js";
 import {
   CommonModule,
   NgTemplateOutlet
-} from "./chunk-NXXEQXSF.js";
+} from "./chunk-RJHJ44KO.js";
 import {
   ChangeDetectorRef,
   Component,
@@ -43,8 +43,7 @@ import {
   ɵɵqueryRefresh,
   ɵɵstyleProp,
   ɵɵtemplate
-} from "./chunk-CVGECWBE.js";
-import "./chunk-QOHD3WUR.js";
+} from "./chunk-2R43C4QI.js";
 
 // node_modules/@progress/kendo-draggable-common/dist/es/algorithms/intersect.js
 var getRatio = function(element, target) {

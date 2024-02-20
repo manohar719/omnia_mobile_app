@@ -1,18 +1,18 @@
 <div class="approval-list-wrapper">
     @for (approval of approval_list; track approval) {
-        <mat-card class="approval-card">
-            <mat-card-header>
-                <mat-card-subtitle>{{approval.type}}</mat-card-subtitle>
-                <mat-card-title><mat-icon aria-hidden="false" aria-label="icon notes" fontIcon="notes"></mat-icon>
-                    <span>{{approval.name}}</span></mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-                <p>SYSTEM ID: <span>{{approval.system_id}}</span></p>
-                <p>LOAN #: <span>{{approval.loan_no}}</span></p>
-            </mat-card-content>
-            <mat-card-actions>
-                <span>{{approval.pages}}</span>
-            </mat-card-actions>
-        </mat-card>
+    <mat-card class="approval-card">
+        <mat-card-header>
+            <mat-card-subtitle>{{approval.type}}</mat-card-subtitle>
+            <mat-card-title><mat-icon aria-hidden="false" aria-label="icon notes" fontIcon="notes"></mat-icon>
+                <span routerLinkActive="active" ariaCurrentWhenActive="page" routerLink="/approval-detail">{{approval.name}}</span></mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>SYSTEM ID: <span>{{approval.system_id}}</span></p>
+            <p>LOAN #: <span>{{approval.loan_no}}</span></p>
+        </mat-card-content>
+        <mat-card-actions>
+            <span>{{approval.pages}}</span>
+        </mat-card-actions>
+    </mat-card>
     }
 </div>

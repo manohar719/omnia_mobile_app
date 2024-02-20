@@ -1,6 +1,6 @@
 import {
   UniqueSelectionDispatcher
-} from "./chunk-WSTSWEVE.js";
+} from "./chunk-WCSNBEHA.js";
 import {
   ChangeDetectorRef,
   Directive,
@@ -24,8 +24,7 @@ import {
   ɵɵdefineInjector,
   ɵɵdefineNgModule,
   ɵɵdirectiveInject
-} from "./chunk-CVGECWBE.js";
-import "./chunk-QOHD3WUR.js";
+} from "./chunk-2R43C4QI.js";
 
 // node_modules/@angular/cdk/fesm2022/accordion.mjs
 var nextId$1 = 0;

@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 @Component({
   selector: 'app-approval-detail',
   standalone: true,
-  imports: [MatCardModule, CdkAccordionModule, MatIconModule, CommonModule],
+  imports: [MatCardModule, CdkAccordionModule, MatIconModule, CommonModule, MatButtonModule],
   templateUrl: './approval-detail.component.html',
   styleUrl: './approval-detail.component.scss'
 })
