@@ -1,9 +1,11 @@
 .approval-detail-wrapper {
+    min-height: 90%;
+    overflow: hidden;
     mat-card {
         box-shadow: 0px 0px 5px #ccc;
         border: 1px solid #cccccc7a;
         border-radius: 20px;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
         padding-bottom: 1rem;
         margin-top: 1rem;
         mat-card-header {
@@ -92,7 +94,7 @@
     }
 }
 .approval-actions{
-    position: absolute;
+    position: fixed;
     bottom: 0px;
     left: 0px;
     z-index: 9;
