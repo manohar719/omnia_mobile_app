@@ -108,6 +108,93 @@ export class ApprovalDetailComponent {
       }
       ]
     },
+    {
+      title: 'Documents',
+      type: 'table',
+      content: [{
+        label: 'original loan amount',
+        value: 'Example text'
+      },
+      {
+        label: 'loan amount being disbursed',
+        value: 'Example text'
+      },
+      {
+        label: 'deposit refund from par',
+        value: 'Example text'
+      },
+      {
+        label: 'less payoff funds',
+        value: 'Example text'
+      }
+      ]
+    },
+    {
+      title: 'Documents',
+      type: 'table',
+      content: [{
+        label: 'original loan amount',
+        value: 'Example text'
+      },
+      {
+        label: 'loan amount being disbursed',
+        value: 'Example text'
+      },
+      {
+        label: 'deposit refund from par',
+        value: 'Example text'
+      },
+      {
+        label: 'less payoff funds',
+        value: 'Example text'
+      }
+      ]
+    },
+    {
+      title: 'Documents',
+      type: 'table',
+      content: [{
+        label: 'original loan amount',
+        value: 'Example text'
+      },
+      {
+        label: 'loan amount being disbursed',
+        value: 'Example text'
+      },
+      {
+        label: 'deposit refund from par',
+        value: 'Example text'
+      },
+      {
+        label: 'less payoff funds',
+        value: 'Example text'
+      },
+      {
+        label: 'loan amount being disbursed',
+        value: 'Example text'
+      },
+      {
+        label: 'deposit refund from par',
+        value: 'Example text'
+      },
+      {
+        label: 'less payoff funds',
+        value: 'Example text'
+      },
+      {
+        label: 'loan amount being disbursed',
+        value: 'Example text'
+      },
+      {
+        label: 'deposit refund from par',
+        value: 'Example text'
+      },
+      {
+        label: 'less payoff funds',
+        value: 'Example text'
+      }
+      ]
+    },
     // {
     //   title: 'Deal Comments',
     //   type: 'list',
