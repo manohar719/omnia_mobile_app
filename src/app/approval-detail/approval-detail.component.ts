@@ -223,7 +223,9 @@ export class ApprovalDetailComponent {
   openDialog() {
     this.dialog.open(DialogComponent, {
       height: '95%',
-      id: 'dialog-box'
+      id: 'dialog-box',
+      width: '95%'
+
     });
   }
 }

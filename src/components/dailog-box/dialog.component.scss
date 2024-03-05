@@ -5,6 +5,7 @@
     border-radius: 14px;
 }
 mat-dialog-content{
+    text-align: center;
     h4,h5,p{
         color : #003a87;
     }
@@ -14,6 +15,11 @@ mat-dialog-content{
     }
     h4{
         font-size: 1.8rem;
+    }
+    p{
+        padding-top: 1rem;
+        line-height: normal;
+        text-align: justify;
     }
 }
 .dialog-header {
