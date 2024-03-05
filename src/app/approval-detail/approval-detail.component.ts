@@ -3,6 +3,11 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatIconModule } from '@angular/material/icon';
+import {
+  MatDialog
+} from '@angular/material/dialog';
+import { DialogComponent } from '../../components/dailog-box/dialog.component';
+
 
 @Component({
   selector: 'app-approval-detail',
@@ -212,4 +217,14 @@ export class ApprovalDetailComponent {
     // }
     ]
   }
+
+  constructor(public dialog: MatDialog) {}
+
+  openDialog() {
+    this.dialog.open(DialogComponent, {
+      height: '95%',
+      id: 'dialog-box'
+    });
+  }
 }
+
