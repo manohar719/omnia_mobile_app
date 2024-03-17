@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { CdkAccordionModule } from '@angular/cdk/accordion';
 import { MatIconModule } from '@angular/material/icon';
+import { ApprovalTitle } from '../component/approval-title/approval-title.component';
+import { DocumentList } from '../component/document-list/document-list.component';
+import { Comment } from '../component/comment/comment.component';
+import { ChangeLog } from '../component/change-log/change-log.component';
 
 @Component({
   selector: 'app-approval-commission',
   standalone: true,
-  imports: [MatCardModule, CdkAccordionModule, MatIconModule, CommonModule],
+  imports: [MatCardModule, CdkAccordionModule, MatIconModule, CommonModule, ApprovalTitle, DocumentList, Comment, ChangeLog],
   templateUrl: './approval-commission.component.html',
   styleUrl: './approval-commission.component.scss'
 })
@@ -16,10 +20,28 @@ export class ApprovalCommissionComponent {
   show = true
   expandedIndex = 0;
   loan_detail = {
-    type: 'Loan Disbursement',
+    type: 'Commission',
     name: 'Centrum Citrus Farms, LLC',
     system_id: '12345',
     loan_no: '12345678',
+    netCommissionPayable: '$ 000,00,000.00',
+    content: [{
+      label: 'original loan amount',
+      value: '$ 00.000.000'
+    },
+    {
+      label: 'loan amount being disbursed',
+      value: '$ 00.000.000'
+    },
+    {
+      label: 'deposit refund from par',
+      value: '$ 00.000.000'
+    },
+    {
+      label: 'less payoff funds',
+      value: '$ 00.000.000'
+    }
+    ],
     details: [{
       title: 'Loan Details',
       type: 'table',

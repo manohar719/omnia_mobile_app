@@ -1,0 +1,29 @@
+.comment-list{
+    padding: 12px;
+    .title{
+        position: relative;
+    }
+    h5{
+        font-size: 1rem;
+        display: inline-block;
+        padding-right: 0.2rem;
+        position: relative;
+        color: #003a87;
+        mat-icon{
+            position: absolute;
+            left: 0;
+            font-size: 1.1rem;
+        }
+    }
+   
+    .date{
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 0.8rem;
+        color: #878787;
+    }
+    p{
+        font-size: 0.9rem;
+    }
+}
